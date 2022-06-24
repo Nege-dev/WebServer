@@ -8,11 +8,11 @@ const requestListener = function (req, res) {
   let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
  
   const response = {
-    Name: 'Time and Date server', 
+    Name: "Time and Date server", 
     Date: date,
     Time: time
   };
-  
+
   res.end(JSON.stringify(response));
 }
 
